@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      form {
+        max-width: 350px;
+        width: 100%;
+        font-family: "Poppins";
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      .title {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+      .title h1 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45px;
+        color: #1f41bb;
+        margin-bottom: 26px;
+      }
+      .title p {
+        max-width: 228px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+      }
+      .input-group {
+        margin-bottom: 29px;
+      }
+      .input-group input {
+        width: 100%;
+        height: 64px;
+        border-radius: 10px;
+        border: none;
+        background-color: #f1f4ff;
+        padding: 20px;
+      }
+      .input-group input::placeholder {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #626262;
+      }
+      .input-group input:focus {
+        outline: 2px solid #1f41bb;
+      }
+      .forgot {
+        text-align: right;
+        margin-bottom: 30px;
+      }
+      .forgot a {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        text-decoration: none;
+        color: #1f41bb;
+      }
+      .submitButton button{
+        width: 100%;
+        height: 60px;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        background-color: #1f41bb;
+        margin-bottom: 30px;
+      }
+      .gotosignup {
+        text-align: center;
+        margin-bottom: 35px;
+      }
+      .gotosignup a {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        text-decoration: none;
+        color: #494949;
+      }
+      .social-media {
+        text-align: center;
+      }
+      .social-media {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        color: #1f41bb;
+        margin-bottom: 20px;
+      }
+      .social-media .btn-block button{
+        width: 60px;
+        height: 44px;
+        border: none;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: #eeeeee;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <div class="title">
+        <h1>Login here</h1>
+        <p>Welcome back you’ve been missed!</p>
+      </div>
+      <div class="input-group">
+        <input type="text" placeholder="Email" />
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="Password" />
+      </div>
+      <div class="forgot">
+        <a href="#">Forgot your password?</a>
+      </div>
+      <div class="submitButton">
+        <button>Sign in</button>
+      </div>
+      <div class="gotosignup">
+        <a href="signup.html">Create new account</a>
+      </div>
+      <div class="social-media">
+        <p>Or continue with</p>
+        <div class="btn-block">
+          <button>
+            <svg
+              width="60"
+              height="44"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30 31.375C28.4581 31.3753 26.94 30.9954 25.58 30.2688C24.2201 29.5421 23.0604 28.4913 22.2036 27.2094C21.3468 25.9275 20.8195 24.4541 20.6682 22.9196C20.517 21.3852 20.7465 19.8371 21.3365 18.4126C21.9265 16.9881 22.8588 15.7311 24.0507 14.7529C25.2426 13.7748 26.6573 13.1057 28.1696 12.805C29.6818 12.5043 31.2449 12.5812 32.7204 13.029C34.1958 13.4767 35.538 14.2814 36.6281 15.3719C36.733 15.4764 36.8162 15.6006 36.873 15.7373C36.9298 15.8741 36.959 16.0207 36.959 16.1688C36.959 16.3168 36.9298 16.4634 36.873 16.6002C36.8162 16.7369 36.733 16.8611 36.6281 16.9656C36.4147 17.1729 36.1288 17.2889 35.8312 17.2889C35.5337 17.2889 35.2478 17.1729 35.0344 16.9656C34.376 16.3004 33.5918 15.773 32.7274 15.414C31.8631 15.0551 30.9359 14.8719 30 14.875C28.6391 14.876 27.3069 15.2666 26.1611 16.0009C25.0152 16.7351 24.1036 17.7821 23.534 19.0181C22.9644 20.2541 22.7608 21.6273 22.9471 22.9754C23.1334 24.3235 23.7019 25.59 24.5853 26.6252C25.4687 27.6604 26.6302 28.4209 27.9322 28.8168C29.2343 29.2127 30.6225 29.2275 31.9326 28.8593C33.2428 28.4911 34.4201 27.7554 35.3253 26.7392C36.2305 25.723 36.8257 24.4688 37.0406 23.125H30C29.7016 23.125 29.4155 23.0065 29.2045 22.7955C28.9935 22.5845 28.875 22.2984 28.875 22C28.875 21.7016 28.9935 21.4155 29.2045 21.2045C29.4155 20.9935 29.7016 20.875 30 20.875H38.25C38.5484 20.875 38.8345 20.9935 39.0455 21.2045C39.2565 21.4155 39.375 21.7016 39.375 22C39.37 24.4849 38.3807 26.8666 36.6236 28.6237C34.8666 30.3807 32.4849 31.37 30 31.375Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <button>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 16.84 5.44 20.87 10 21.8V15H8V12H10V9.5C10 7.57 11.57 6 13.5 6H16V9H14C13.45 9 13 9.45 13 10V12H16V15H13V21.95C18.05 21.45 22 17.19 22 12Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+          <button>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.05 20.28C16.07 21.23 15 21.08 13.97 20.63C12.88 20.17 11.88 20.15 10.73 20.63C9.29 21.25 8.53 21.07 7.67 20.28C2.79 15.25 3.51 7.59 9.05 7.31C10.4 7.38 11.34 8.05 12.13 8.11C13.31 7.87 14.44 7.18 15.7 7.27C17.21 7.39 18.35 7.99 19.1 9.07C15.98 10.94 16.72 15.05 19.58 16.2C19.01 17.7 18.27 19.19 17.04 20.29L17.05 20.28ZM12.03 7.25C11.88 5.02 13.69 3.18 15.77 3C16.06 5.58 13.43 7.5 12.03 7.25Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
